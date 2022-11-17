@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --Font-size: 15px;
+    --Family:'Outfit';
+    --Weights: 400, 700;
+}
+
+*{
+    font-family: var(--Family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background: var(--Light-gray);
+    display: flex;
+    max-width: 1440px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.box img{
+    width: 320px;
+    border-radius: 10px;
+}
+
+.box .content{
+    width: 320px;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+.box .content p:first-child{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.box p{
+    margin-bottom: 1rem;
+}
+
+.box .content p:nth-child(2){
+    font-size: 15px;
+    font-weight: var(--Weights);
+    color: var(--Grayish-blue);
+}
+
+
+
+
+
